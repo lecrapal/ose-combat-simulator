@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSE Combat Simulator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>OSE Combat Simulator</h1>
+
+<form id="combat-form">
+    <div class="group-container">
+        <h2>Groupe 1 (PJs)</h2>
+        <button type="button" id="add-default-party1">Ajouter le groupe prédéfini</button>
+        <button type="button" id="add-party1">Ajouter un PJ</button>
+        <div id="party1-container"></div>
+    </div>
+
+    <div class="group-container">
+        <h2>Groupe 2 (PNJs)</h2>
+        <button type="button" id="add-party2">Ajouter un PNJ</button>
+        <div id="party2-container"></div>
+    </div>
+
+    <div>
+        <label>
+            <input type="checkbox" id="use-morale" checked>
+            Utiliser le moral
+        </label>
+    </div>
+
+    <button type="submit">Simuler les combats</button>
+</form>
+
+<div id="result"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

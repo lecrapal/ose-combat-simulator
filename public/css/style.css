@@ -1,0 +1,90 @@
+:root {
+    --primary: #2c3e50;
+    --secondary: #34495e;
+    --accent: #e74c3c;
+    --success: #27ae60;
+    --light: #ecf0f1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: var(--light);
+}
+.character-entry {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    padding: 15px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.party2 .character-entry {
+    grid-template-columns: auto 1fr 1fr 1fr 1fr 0.8fr 0.8fr;
+}
+input {
+    flex: 1;
+}
+
+/* Input groups */
+.input-group {
+    position: relative;
+}
+
+.input-group input {
+    width: 100%;
+}
+
+.input-group::before {
+    content: attr(data-label);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    font-size: 0.8em;
+    color: var(--secondary);
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: var(--primary);
+    color: white;
+}
+
+.remove-character {
+    padding: 5px 10px;
+    background: var(--accent);
+}
+
+#result {
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+}
+
+.error {
+    color: var(--accent);
+    font-weight: bold;
+}
+
+#use-morale {
+    margin: 20px 0;
+}
+
+h2 {
+    color: var(--primary);
+    margin-top: 30px;
+}
+
+.group-container {
+    margin: 20px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+}
